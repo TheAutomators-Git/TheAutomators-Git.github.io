@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #navbar-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+
+nav {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 30px;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 2px;
+    bottom: 0;
+    width: 0px;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    transition: width 0.2s ease-out;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+#construction-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100svh - 60px);
+}
+
+#construction-section h1 {
+    font-size: 40px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: black;
+}
