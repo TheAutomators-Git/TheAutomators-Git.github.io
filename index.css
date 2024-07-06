@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: "Roboto", sans-serif;
+    background-color: #D9D9D9;
 }
 
 main {
@@ -42,6 +43,7 @@ nav {
 .HeroSection{
     background: linear-gradient(180deg, #075E52 0%, #043443 100%);
     width: 100%;
+    height: 900px;
     color: white;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
@@ -52,6 +54,16 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+.Hero p {
+    color : #043443;
+    font-weight: bolder;
+}
+.Heading{
+    height: 150px;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: 60px;
 }
 .box{
     width: 350px;
@@ -65,6 +77,7 @@ nav {
 .box-container {
     text-align: center;
     margin: 0 40px; /* Adjust as needed */
+    margin-top: 45px;
 }
 .box:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -141,6 +154,61 @@ nav a:hover::before {
     cursor: pointer;
     font-size: 20px;
 }
+.AboutSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background: #D9D9D9;
+    color: #043443;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+}
+.AboutSectiondiv {
+    background: #D9D9D9;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.text-container-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    max-width: 600px;
+    font-size: 25px;
+}
+
+.image-and-text-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.textabout{
+    color: #043443;
+}
+.textbelowthelogoinaboutsection{
+    font-size: 60px;
+    color: #043443;
+
+}
+.AboutImage {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
 
 footer {
     width: 100%;
