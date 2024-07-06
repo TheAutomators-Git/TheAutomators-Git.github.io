@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +22,6 @@ main #navbar-section {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: black;
     color: white;
     height: 60px;
 }
@@ -33,6 +33,42 @@ nav {
     align-items: center;
     width: 100%;
     margin: 0 30px;
+}
+.AutomatersLogo{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+.HeroSection{
+    background: linear-gradient(180deg, #075E52 0%, #043443 100%);
+    width: 100%;
+    color: white;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.Hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.box{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 40px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.box-container {
+    text-align: center;
+    margin: 0 40px; /* Adjust as needed */
+}
+.box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-30px);
 }
 
 nav div {
@@ -69,11 +105,41 @@ nav a:hover::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100svh - 60px);
+    height: calc(100vh - 60px);
 }
 
 #construction-section h1 {
     font-size: 40px;
+}
+
+#popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#popup-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 footer {
