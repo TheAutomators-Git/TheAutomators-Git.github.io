@@ -43,6 +43,7 @@ nav {
 .HeroSection{
     background: linear-gradient(180deg, #075E52 0%, #043443 100%);
     width: 100%;
+
     height: 900px;
     color: white;
     border-bottom-left-radius: 150px;
@@ -55,6 +56,7 @@ nav {
     align-items: center;
     flex-direction: row;
 }
+
 .Hero p {
     color : #043443;
     font-weight: bolder;
@@ -65,6 +67,8 @@ nav {
     font-weight: bolder;
     margin-top: 60px;
 }
+
+
 .box{
     width: 350px;
     height: 400px;
@@ -207,8 +211,6 @@ nav a:hover::before {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
-
 
 footer {
     width: 100%;
