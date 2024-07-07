@@ -31,3 +31,103 @@
 // htmlContent += '</div>';
 
 // hero.innerHTML = htmlContent;
+document.addEventListener('DOMContentLoaded', () => {
+    const image = document.querySelector('.image-and-text-about img');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                image.classList.add('rotate-on-screen');
+            } else {
+                image.classList.remove('rotate-on-screen');
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(image);
+});
+const carousel = document.querySelector('.carousel');
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    const prevButton = document.querySelector('.carousel-button.prev');
+    const nextButton = document.querySelector('.carousel-button.next');
+    const itemsPerSlide = 3; // Number of items per slide
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        carouselItems.forEach((item, index) => {
+            item.classList.remove('active');
+            if (index >= currentIndex && index < currentIndex + itemsPerSlide) {
+                item.classList.add('active');
+            }
+        });
+        const translateX = -currentIndex * (100 / itemsPerSlide);
+        carousel.style.transform = `translateX(${translateX}%)`;
+    }
+
+    prevButton.addEventListener('click', function () {
+        currentIndex = (currentIndex > 0) ? currentIndex - itemsPerSlide : carouselItems.length - itemsPerSlide;
+        updateCarousel();
+    });
+
+    nextButton.addEventListener('click', function () {
+        currentIndex = (currentIndex < carouselItems.length - itemsPerSlide) ? currentIndex + itemsPerSlide : 0;
+        updateCarousel();
+    });
+
+    // Initialize the carousel
+    updateCarousel();
+});
+let team = [
+    {
+        name: "Muhammad Talal Majeed",
+        
+        image: "Talal.png",
+    },
+    {
+        name: "Bilal Rana",
+        role: "CTO",
+        image: "Bilal.jpg",
+    },
+    {
+        name: "Mujtaba",
+        role: "COO",
+        image: "Mujtaba.jpg",
+    },
+    {
+        name: "Ayyan",
+        role: "CFO",
+        image: "Ayyan.jpg",
+    },
+    
+]
+let cData = '';
+for (let i = 0; i < team.length; i++) {
+    cData += `<div class="carousel-item">
+                  <div><img src="${team[i].image}" alt="${team[i].name}" class="team-image"  /></div>
+                  <p class="teammember-name">${team[i].name}</p>
+              </div>`;
+}
+carousel.innerHTML = cData;
+
+document.querySelectorAll('.ripple').forEach(button => {
+    button.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        ripple.style.width = ripple.style.height = `${size}px`;
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+        ripple.classList.add('ripple-effect');
+
+        this.appendChild(ripple);
+
+        setTimeout(() => {
+            ripple.remove();
+        }, 600); // Duration of the ripple effect
+    });
+});
+
