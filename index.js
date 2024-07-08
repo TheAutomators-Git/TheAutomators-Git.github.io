@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(image);
 });
-const carousel = document.querySelector('.carousel');
+/*const carousel = document.querySelector('.carousel');
 document.addEventListener('DOMContentLoaded', function () {
     const carouselItems = document.querySelectorAll('.carousel-item');
     const prevButton = document.querySelector('.carousel-button.prev');
@@ -108,7 +108,7 @@ for (let i = 0; i < team.length; i++) {
                   <p class="teammember-name">${team[i].name}</p>
               </div>`;
 }
-carousel.innerHTML = cData;
+carousel.innerHTML = cData;*/
 
 document.querySelectorAll('.ripple').forEach(button => {
     button.addEventListener('click', function (e) {
