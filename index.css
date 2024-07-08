@@ -41,9 +41,8 @@ nav {
     margin-top: 5px;
 }
 .HeroSection{
-    background: linear-gradient(180deg, #075E52 0%, #043443 100%);
+    background: linear-gradient(90deg, #075E52 10%, #043443 100%);
     width: 100%;
-
     height: 900px;
     color: white;
     border-bottom-left-radius: 150px;
@@ -383,7 +382,7 @@ footer a {
 .TeamSection {
     width: 100%;
     background: url('/mnt/data/image.png') no-repeat center center;
-    background-size: cover;
+        background-size: cover;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
@@ -437,13 +436,14 @@ footer a {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     flex: 1;
-    max-width: 250px;
+    width: 250px;
     margin: 10px;
+    height: 300px;
 }
 
 .team-image {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
 }
 
@@ -468,4 +468,32 @@ footer a {
     width: 20px;
     height: 20px;
 }
+.ProjectSection{
+        width: 100%;
+        background-size: cover;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    
+}
+.Project-heading {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #043443; /* Adjust color as needed */
+    margin-bottom: 20px;
+}
+.Project-intro {
+    color: #043443; /* Adjust color as needed */
+    font-size: 16px;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+.footer{
+    background: linear-gradient(90deg, #075E52 10%, #043443 100%);
+    color: white;
+}
 
+/*background: url('/mnt/data/image.png') no-repeat center center;*/
