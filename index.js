@@ -77,38 +77,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize the carousel
     updateCarousel();
-});
+});*/
 let team = [
     {
         name: "Muhammad Talal Majeed",
-        
+        role: "Tech Team Lead",
         image: "Talal.png",
     },
     {
         name: "Bilal Rana",
-        role: "CTO",
+        role: "Machine Learning Team Lead",
         image: "Bilal.jpg",
     },
     {
         name: "Mujtaba",
-        role: "COO",
+        role: "General Manager",
         image: "Mujtaba.jpg",
     },
     {
         name: "Ayyan",
-        role: "CFO",
+        role: "Hardware Team Lead",
         image: "Ayyan.jpg",
     },
     
 ]
 let cData = '';
 for (let i = 0; i < team.length; i++) {
-    cData += `<div class="carousel-item">
-                  <div><img src="${team[i].image}" alt="${team[i].name}" class="team-image"  /></div>
-                  <p class="teammember-name">${team[i].name}</p>
-              </div>`;
+    cData += `<div class="team-member">
+                    <img src="${team[i].image}" alt="${team[i].name}" class="team-image">
+                    <div class="teammember-name">${team[i].name}</div>
+                    <div class="teammember-title">${team[i].role}</div>
+                </div>`
 }
-carousel.innerHTML = cData;*/
+document.querySelector(".team-container").innerHTML = cData;
 
 document.querySelectorAll('.ripple').forEach(button => {
     button.addEventListener('click', function (e) {
@@ -131,3 +132,7 @@ document.querySelectorAll('.ripple').forEach(button => {
     });
 });
 
+window.addEventListener('resize', () => {
+    let newViewportWidth = window.innerWidth;
+    console.log("New Viewport Width: " + newViewportWidth + "px");
+});

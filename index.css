@@ -9,6 +9,11 @@ body {
     justify-content: center;
     font-family: "Roboto", sans-serif;
     background-color: #D9D9D9;
+    overflow: auto;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 main {
@@ -25,6 +30,7 @@ main #navbar-section {
     justify-content: center;
     color: white;
     height: 60px;
+     margin-bottom: 40px;
 }
 
 nav {
@@ -65,7 +71,7 @@ nav {
     height: 150px;
     font-size: 80px;
     font-weight: bolder;
-    margin-top: 60px;
+    /* margin-top: 20px; */
 }
 
 
@@ -80,8 +86,8 @@ nav {
 }
 .box-container {
     text-align: center;
-    margin: 0 40px; /* Adjust as needed */
-    margin-top: 45px;
+    margin: 0 20px; /* Adjust as needed */
+    margin-top: 30px;
 }
 .box:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -443,7 +449,7 @@ footer a {
 
 .team-image {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -469,3 +475,107 @@ footer a {
     height: 20px;
 }
 
+@media (max-width: 1200px) {
+    .Heading {
+        font-size: 60px;
+    }
+
+    .box {
+        width: 300px;
+        height: 350px;
+    }
+
+    .textbelowthelogoinaboutsection {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Hero {
+        flex-direction: column;
+    }
+
+    nav div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Heading {
+        font-size: 40px;
+        height: auto;
+    }
+
+    #construction-section{
+        
+        height: auto;
+        
+    }
+    
+    .box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text-container-about,
+    .image-and-text-about {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .AboutSectiondiv {
+        flex-direction: column;
+    }
+}
+:root ::-webkit-scrollbar {
+    width: 14px; 
+    border-radius: 12px;
+}
+
+:root ::-webkit-scrollbar-thumb {
+    background-color: #2e3130ec;
+    border-radius: 12px; 
+    border: 2px solid #037b8800; 
+}
+
+:root ::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff; 
+}
+
+:root ::-webkit-scrollbar-track {
+    background: #1c1c1c03; 
+    border-radius: 12px;
+}
+@media (max-width: 600px) {
+    .Hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+        max-width: 590px;
+    }
+    .Heading {
+        font-size: 30px;
+        height: auto;
+    }
+    .box {
+        width: 100%;
+        margin: 20px 00px;
+    }
+    .box-container {
+        margin: 0;
+        width: 6000px;
+    }
+    .AboutImage{
+        width: 80px;
+        height: 80px;
+        padding-top: 0px;
+    }
+    .textbelowthelogoinaboutsection{
+        font-size: 30px;
+    }
+    .TeamSection{
+        margin-top: 50px;
+    }
+    
+}
