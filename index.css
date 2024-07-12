@@ -1528,3 +1528,10 @@ footer a:hover {
         background-position: center;
         width: 100%;
     }
+    .name-project-person{
+       color: grey;
+    }
+    .proj-title{
+        color: black;
+        
+    }
