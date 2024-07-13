@@ -1533,5 +1533,9 @@ footer a:hover {
     }
     .proj-title{
         color: black;
-        
+
+    }
+    .carousel-item__details--title{
+        color: white !important;
+        font-size: 12px;
     }
