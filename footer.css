@@ -1,0 +1,86 @@
+footer {
+    color: white;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+    margin: 0;
+    padding: 40px 0 20px 0;
+}
+
+#footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+#footer-table {
+    display: grid;
+    grid-template-areas: "s1 s1 s2 s3";
+    gap: 50px;
+}
+
+#footer section {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+#footer section p {
+    color: rgb(182, 182, 182);
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: 300;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+#footer section h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#footer section a {
+    color: rgb(182, 182, 182);
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#footer-end {
+    color: rgb(182, 182, 182);
+    padding: 0 40px;
+}
+hr {
+    border-color: rgb(182, 182, 182);
+    width: calc(100% - 80px);
+    margin: 20px 40px;
+}
+
+#s1 {
+    grid-area: s1;
+}
+
+#s2 {
+    grid-area: s2;
+}
+
+#s3 {
+    grid-area: s3;
+}
+
+@media screen and (max-width: 900px) {
+    #footer-table {
+        grid-template-areas: "s1 s1" "s2 s3";
+    }
+
+    #footer section p {
+        width: 85%;
+    }
+}

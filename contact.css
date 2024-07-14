@@ -1,0 +1,100 @@
+#contact-section {
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 100px;
+}
+
+#contact-section h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 80px 0 50px 40px;
+}
+
+#contact-divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#contact-divider p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#contact-divider b {
+    min-width: 100px;
+    display: inline-block;
+}
+
+input {
+    width: calc(100% - 32px);
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    width: calc(100% - 32px);
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    outline: none;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-child {
+    width: 100%;
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+@media screen and (max-width: 900px) {
+    #contact-divider {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    #contact-divider p {
+        width: calc(100% - 80px);
+    }
+
+    input {
+        width: calc(100% - 100px);
+    }
+
+    textarea {
+        width: calc(100% - 100px);
+    }
+
+    button {
+        width: calc(100% - 66px);
+    }
+}

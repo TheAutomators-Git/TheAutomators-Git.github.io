@@ -1,0 +1,80 @@
+#project-section {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: URL("assets/projects.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+#project-section h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 80px 0 50px 0;
+}
+
+#project-section p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 0 80px 0;
+}
+
+#project-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 1400px;
+    gap: 40px;
+}
+
+.project-card {
+    height: 600px !important;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.project-card h2 {
+    font-size: 2.5rem !important;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.project-card p {
+    font-size: 1.3rem !important;
+    font-weight: 300 !important;
+    margin: 20px 0 40px 0 !important;
+    width: 100%;
+    text-align: center;
+}
+
+.project-card img {
+    width: 85%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: top center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
+}
+
+.project-card li {
+    font-size: 1.2rem !important;
+    font-weight: 300;
+    margin: 20px;
+}

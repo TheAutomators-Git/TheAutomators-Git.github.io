@@ -1,0 +1,24 @@
+#about-section {
+    max-width: 1400px;
+    padding: 40px;
+}
+
+#about-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+#about-section p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 40px 0;
+    color: rgb(58, 58, 58);
+}
+
+@media screen and (max-width: 700px) {
+    #about-section {
+        text-align: center;
+    }
+}
