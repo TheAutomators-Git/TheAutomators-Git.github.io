@@ -101,3 +101,40 @@ document.querySelectorAll(".wrapper").forEach((wrapper) => {
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
     wrapper.addEventListener("mouseleave", autoPlay);
 });
+
+
+// start of the code for the starting animation
+document.addEventListener('DOMContentLoaded', function() {
+    const words = document.querySelectorAll('.word');
+    let delay = 500; // 0.5 seconds delay between each word
+
+    words.forEach((word, index) => {
+        setTimeout(() => {
+            word.classList.add('show');
+        }, delay * (index + 1));
+    });
+
+    // Hide the overlay after the loader finishes
+    setTimeout(function() {
+        document.getElementById('overlay').classList.add('hidden');
+    }, delay * (words.length + 2)); // Adjust to ensure it hides after the last word
+});
+//center the scrollbar for cards
+document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.querySelector('.core-content');
+    if (grid) {
+        const centerGrid = () => {
+            if (window.innerWidth < 1280) {
+                grid.scrollLeft = (grid.scrollWidth - grid.clientWidth) / 2;
+            } else {
+                grid.scrollLeft = 0; // or another desired position for larger screens
+            }
+        };
+
+        // Center the grid on initial load
+        centerGrid();
+
+        // Optionally, re-center the grid on window resize
+        window.addEventListener('resize', centerGrid);
+    }
+});

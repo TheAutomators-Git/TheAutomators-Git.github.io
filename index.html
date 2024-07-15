@@ -17,8 +17,18 @@
         <link rel="stylesheet" href="project.css" />
         <link rel="stylesheet" href="contact.css" />
         <link rel="stylesheet" href="footer.css" />
+        <link rel="stylesheet" href="card.css" />
+        <link rel="stylesheet" href="starting.css" />
     </head>
     <body>
+        <div id="overlay">
+            <div class="TaglineMain-transition">
+                <div class="word">Research</div>
+                <div class="word">Automation</div>
+                <div class="word">Networking</div>
+            </div>
+            <div class="loader"></div>
+        </div>
         <main>
             <section id="navbar-section">
                 <nav>
@@ -70,9 +80,126 @@
                     <span></span>
                 </div>
                 <div id="core-content">
-                    <article></article>
-                    <article></article>
-                    <article></article>
+                    <article>
+                        <div class="card">
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 20v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.93 4.93l1.41 1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.66 17.66l1.41 1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.93 19.07l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 4a8 8 0 0 1 8 8h2a10 10 0 1 0-10 10v-2a8 8 0 0 1-8-8H2a10 10 0 1 0 10-10V4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.25 10.75a1.5 1.5 0 0 1 0 2.5 1.5 1.5 0 0 1-2.5 0 1.5 1.5 0 0 1 0-2.5 1.5 1.5 0 0 1 2.5 0" fill="currentColor"/>
+                                    <path d="M12.75 7.75a1.5 1.5 0 0 1 0 2.5 1.5 1.5 0 0 1-2.5 0 1.5 1.5 0 0 1 0-2.5 1.5 1.5 0 0 1 2.5 0" fill="currentColor"/>
+                                    <path d="M9.75 10.75a1.5 1.5 0 0 1 0 2.5 1.5 1.5 0 0 1-2.5 0 1.5 1.5 0 0 1 0-2.5 1.5 1.5 0 0 1 2.5 0" fill="currentColor"/>
+                                    <path d="M12.75 13.75a1.5 1.5 0 0 1 0 2.5 1.5 1.5 0 0 1-2.5 0 1.5 1.5 0 0 1 0-2.5 1.5 1.5 0 0 1 2.5 0" fill="currentColor"/>
+                                </svg>
+                                
+                            </span>
+                            <h4>Automation</h4>
+                            <p>Whether it's automating complex business workflows, optimizing large-scale data management systems, or designing and deploying custom scripts tailored to unique business needs, we are committed to driving productivity and fostering innovation through cutting-edge technology. Our proactive approach to research and development ensures that we stay abreast of emerging trends and technological advancements. This allows us to continuously innovate and offer solutions that propel your business forward. Trust us to implement technology that enhances efficiency and streamlines your operations.</p>
+                            <div class="shine"></div>
+                            <div class="background">
+                                <div class="tiles">
+                                    <div class="tile tile-1"></div>
+                                    <div class="tile tile-2"></div>
+                                    <div class="tile tile-3"></div>
+                                    <div class="tile tile-4"></div>
+                                    <div class="tile tile-5"></div>
+                                    <div class="tile tile-6"></div>
+                                    <div class="tile tile-7"></div>
+                                    <div class="tile tile-8"></div>
+                                    <div class="tile tile-9"></div>
+                                    <div class="tile tile-10"></div>
+                                </div>
+                                <div class="line line-1"></div>
+                                <div class="line line-2"></div>
+                                <div class="line line-3"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 2nd card element -->
+                    <article>
+                        <div class="card">
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="20" cy="4" r="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="4" cy="20" r="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="20" cy="20" r="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="5.5" y1="5.5" x2="10.5" y2="10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="18.5" y1="5.5" x2="13.5" y2="10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="5.5" y1="18.5" x2="10.5" y2="13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="18.5" y1="18.5" x2="13.5" y2="13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="12" y1="14" x2="12" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="4" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="20" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            </span>
+                            <h4>Networking</h4>
+                            <p>Our team excels in creating seamless, secure, and scalable network infrastructures that ensure reliable connectivity and efficient data flow. From configuring network protocols to optimizing performance and security, we bring our technical expertise to build networks that support your business operations and drive growth. Let us help you connect, communicate, and collaborate more effectively with our comprehensive networking services. We are dedicated to providing solutions that enhance your network's reliability and performance.</p>
+                            <div class="shine"></div>
+                            <div class="background">
+                                <div class="tiles">
+                                    <div class="tile tile-1"></div>
+                                    <div class="tile tile-2"></div>
+                                    <div class="tile tile-3"></div>
+                                    <div class="tile tile-4"></div>
+                                    <div class="tile tile-5"></div>
+                                    <div class="tile tile-6"></div>
+                                    <div class="tile tile-7"></div>
+                                    <div class="tile tile-8"></div>
+                                    <div class="tile tile-9"></div>
+                                    <div class="tile tile-10"></div>
+                                </div>
+                                <div class="line line-1"></div>
+                                <div class="line line-2"></div>
+                                <div class="line line-3"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 3rd card element -->
+                    <article>
+                        <div class="card">
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 4H16V8H20V4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 20H16V8H4V20Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 16H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            </span>
+                            <h4>Research</h4>
+                            <p>Our dedicated research team is committed to staying ahead of the curve, conducting in-depth analysis, and experimenting with new approaches to solve complex challenges. From investigating emerging trends in AI and machine learning to exploring advancements in software development practices, we empower our clients with insights that pave the way for groundbreaking solutions. Trust us to harness the power of research to propel your projects forward and achieve exceptional results. Our focus on research ensures that we deliver innovative solutions tailored to your needs.</p>
+                            <div class="shine"></div>
+                            <div class="background">
+                                <div class="tiles">
+                                    <div class="tile tile-1"></div>
+                                    <div class="tile tile-2"></div>
+                                    <div class="tile tile-3"></div>
+                                    <div class="tile tile-4"></div>
+                                    <div class="tile tile-5"></div>
+                                    <div class="tile tile-6"></div>
+                                    <div class="tile tile-7"></div>
+                                    <div class="tile tile-8"></div>
+                                    <div class="tile tile-9"></div>
+                                    <div class="tile tile-10"></div>
+                                </div>
+                                <div class="line line-1"></div>
+                                <div class="line line-2"></div>
+                                <div class="line line-3"></div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
             <section id="team-section">
