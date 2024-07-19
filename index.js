@@ -138,3 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', centerGrid);
     }
 });
+document.getElementById('ham-burger').addEventListener('click', function() {
+    const sidebarMenu = document.getElementById('sidebar-menu');
+    sidebarMenu.classList.toggle('show');
+});
+
+// Optional: Close the sidebar when clicking outside of it
+document.addEventListener('click', function(event) {
+    const sidebarMenu = document.getElementById('sidebar-menu');
+    const hamBurger = document.getElementById('ham-burger');
+    if (!sidebarMenu.contains(event.target) && !hamBurger.contains(event.target)) {
+        sidebarMenu.classList.remove('show');
+    }
+});

@@ -18,7 +18,7 @@ footer {
 
 #footer-table {
     display: grid;
-    grid-template-areas: "s1 s1 s2 s3";
+    grid-template-areas: "s1 s1 s2 s3 s4";
     gap: 50px;
 }
 
@@ -74,13 +74,35 @@ hr {
 #s3 {
     grid-area: s3;
 }
+#s4 {
+    grid-area: s4;
+}
 
 @media screen and (max-width: 900px) {
     #footer-table {
-        grid-template-areas: "s1 s1" "s2 s3";
+        grid-template-areas: "s1 s1" "s2 s3" "s4 s4";
     }
 
     #footer section p {
         width: 85%;
     }
 }
+ 
+.social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    
+  }
+ .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  

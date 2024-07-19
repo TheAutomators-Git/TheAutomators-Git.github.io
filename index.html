@@ -37,13 +37,21 @@
                     </div>
                     <div>
                         <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Team</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#about-section">About</a>
+                        <a href="#team-section">Team</a>
+                        <a href="#project-section">Projects</a>
+                        <a href="#contact-section">Contact</a>
                     </div>
-                    <button class="ham-burger">
+                    <button class="ham-burger" id="ham-burger">
                         <i class="fa-solid fa-bars"></i>
+                        <div id="sidebar-menu" class="sidebar">
+                            <a href="#">Home</a>
+                            <a href="#about-section">About</a>
+                            <a href="#team-section">Team</a>
+                            <a href="#project-section">Projects</a>
+                            <a href="#contact-section">Contact</a>
+                        </div>
+            
                     </button>
                 </nav>
             </section>
@@ -57,7 +65,7 @@
                 </p>
             </section>
             <section id="about-section">
-                <h1>Our Story</h1>
+                <h1 id="about-header">Our Story</h1>
                 <p>
                     Founded in 2024, we began as a small team with big
                     aspirations. We saw the growing demand for innovative and
@@ -203,8 +211,9 @@
                 </div>
             </section>
             <section id="team-section">
-                <h1>Our Team</h1>
                 <div>
+                    <h1 id="team-header">Our Team</h1>
+
                     <div class="wrapper">
                         <i id="left" class="fa-solid fa-angle-left"></i>
                         <ul class="carousel">
@@ -315,34 +324,25 @@
                                 <li>Personalized Quiz Recommendations</li>
                             </ul>
                         </li>
+                        
                         <li class="card project-card">
-                            <h2>Care AI</h2>
-                            <p>Health Management System</p>
-                            <img src="assets/project1.png" alt="" />
+                            <h2>Clean Campus</h2>
+                            <p>Smart Litter Enforcement</p>
+                            <img src="assets/cleancampus.jpeg" alt="" />
                             <ul>
-                                <li>AI Powered Health Monitoring</li>
-                                <li>Real Time Health Analysis</li>
-                                <li>Personalized Health Recommendations</li>
+                                <li>YOLOv8m for litter detection</li>
+                                <li>Computer Vision and Face Recognition Technology</li>
+                                <li>Database oriented project</li>
                             </ul>
                         </li>
                         <li class="card project-card">
-                            <h2>NeuroFlow</h2>
-                            <p>AI Based Diagram Generator</p>
-                            <img src="assets/project2.png" alt="" />
+                            <h2>Chit Chat</h2>
+                            <p>Reddit Clone</p>
+                            <img src="assets/reddit.jpeg" alt="" />
                             <ul>
-                                <li>AI Powered Diagram Generator</li>
-                                <li>Real Time Diagram Analysis</li>
-                                <li>Personalized Diagram Recommendations</li>
-                            </ul>
-                        </li>
-                        <li class="card project-card">
-                            <h2>QuizCore</h2>
-                            <p>Quiz & Exam Generator</p>
-                            <img src="assets/project3.png" alt="" />
-                            <ul>
-                                <li>AI Powered Quiz Generator</li>
-                                <li>Real Time Quiz Analysis</li>
-                                <li>Personalized Quiz Recommendations</li>
+                                <li>Fostering User Interaction</li>
+                                <li>Real Time Dynamic Discussions</li>
+                                <li>Anonymous User based Application</li>
                             </ul>
                         </li>
                     </ul>
@@ -417,9 +417,10 @@
                     </section>
                     <section id="s2">
                         <h1>Quick Links</h1>
-                        <a href="#">About</a>
-                        <a href="#">Team</a>
-                        <a href="#">Projects</a>
+                        <a href="#about-section">About</a>
+                        <a href="#team-section">Team</a>
+                        <a href="#project-section">Projects</a>
+                        <a href="#contact-section">Contact</a>
                     </section>
                     <section id="s3">
                         <h1>Projects</h1>
@@ -447,4 +448,3 @@
         <script src="index.js"></script>
     </body>
 </html>
-

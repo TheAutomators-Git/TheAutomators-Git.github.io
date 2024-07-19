@@ -1,4 +1,4 @@
-#core-content {
+#core-values body {
     --background-color: #18181b;
     --text-color: #a1a1aa;
     --card-background-color: rgba(255, 255, 255, .015);
@@ -29,7 +29,7 @@
     --card-hover-icon-border-color: rgba(52, 211, 153, 0.2);
     --blur-opacity: 0.01;
 }
-#core-content .light {
+ body.light {
     --background-color: #fafafa;
     --text-color: #52525b;
     --card-background-color: transparent;
@@ -60,10 +60,10 @@
     --card-hover-icon-border-color: rgba(24, 24, 27, 0.34);
     --blur-opacity: 0.1;
 }
-#core-content .toggle .grid * {
+#core-values  body.toggle .grid * {
     transition-duration: 0s !important;
 }
-.box-container{
+.content-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@
     margin-top: 20px;
 
 }
-.grid {
+#core-values .grid {
     display: grid;
     grid-template-columns: repeat(2, 240px); /* Adjust as needed */
     grid-gap: 310px;
@@ -82,7 +82,7 @@
 
 
 
-.card {
+#core-values .card {
     background-color: var(--background-color);
     box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
     padding: 56px 16px 16px 16px;
@@ -90,8 +90,8 @@
     cursor: pointer;
     position: relative;
     transition: box-shadow 0.25s;
-    width: 90%;
-    height: 400px;
+    width: 500px;
+    height: auto;
     margin-top: 40px;
     margin-bottom: 50px;
 }
@@ -142,10 +142,9 @@
     z-index: 2;
     position: relative;
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.7;
     color: var(--text-color);
-    width: 100%;
 }
 .card .shine {
     border-radius: inherit;
@@ -360,4 +359,33 @@
 html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+}
+* {
+    box-sizing: inherit;
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Inter', Arial;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+body:before {
+    content: '';
+    position: absolute;
+    inset: 0 -60% 65% -60%;
+    background-image: radial-gradient(ellipse at top, #10b981 0%, var(--background-color) 50%);
+    opacity: var(--blur-opacity);
+}
+.core-values{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+
 }
