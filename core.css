@@ -16,12 +16,12 @@
     padding: 100px 40px;
     gap: 40px;
     max-width: 1400px;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 #core-content article {
     display: block;
-    background-color: rgb(226, 226, 226);
+    /* background-color: rgb(226, 226, 226); */
     width: 100%;
     min-width: 350px;
 }
