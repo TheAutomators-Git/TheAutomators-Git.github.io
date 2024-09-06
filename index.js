@@ -102,26 +102,25 @@ document.querySelectorAll(".wrapper").forEach((wrapper) => {
     wrapper.addEventListener("mouseleave", autoPlay);
 });
 
-
 // start of the code for the starting animation
-document.addEventListener('DOMContentLoaded', function() {
-    const words = document.querySelectorAll('.word');
+document.addEventListener("DOMContentLoaded", function () {
+    const words = document.querySelectorAll(".word");
     let delay = 500; // 0.5 seconds delay between each word
 
     words.forEach((word, index) => {
         setTimeout(() => {
-            word.classList.add('show');
+            word.classList.add("show");
         }, delay * (index + 1));
     });
 
     // Hide the overlay after the loader finishes
-    setTimeout(function() {
-        document.getElementById('overlay').classList.add('hidden');
+    setTimeout(function () {
+        document.getElementById("overlay").classList.add("hidden");
     }, delay * (words.length + 2)); // Adjust to ensure it hides after the last word
 });
 //center the scrollbar for cards
-document.addEventListener('DOMContentLoaded', () => {
-    const grid = document.querySelector('.core-content');
+document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.querySelector(".core-content");
     if (grid) {
         const centerGrid = () => {
             if (window.innerWidth < 1280) {
@@ -135,19 +134,22 @@ document.addEventListener('DOMContentLoaded', () => {
         centerGrid();
 
         // Optionally, re-center the grid on window resize
-        window.addEventListener('resize', centerGrid);
+        window.addEventListener("resize", centerGrid);
     }
 });
-document.getElementById('ham-burger').addEventListener('click', function() {
-    const sidebarMenu = document.getElementById('sidebar-menu');
-    sidebarMenu.classList.toggle('show');
+document.getElementById("ham-burger").addEventListener("click", function () {
+    const sidebarMenu = document.getElementById("sidebar-menu");
+    sidebarMenu.classList.toggle("show");
 });
 
 // Optional: Close the sidebar when clicking outside of it
-document.addEventListener('click', function(event) {
-    const sidebarMenu = document.getElementById('sidebar-menu');
-    const hamBurger = document.getElementById('ham-burger');
-    if (!sidebarMenu.contains(event.target) && !hamBurger.contains(event.target)) {
-        sidebarMenu.classList.remove('show');
+document.addEventListener("click", function (event) {
+    const sidebarMenu = document.getElementById("sidebar-menu");
+    const hamBurger = document.getElementById("ham-burger");
+    if (
+        !sidebarMenu.contains(event.target) &&
+        !hamBurger.contains(event.target)
+    ) {
+        sidebarMenu.classList.remove("show");
     }
 });
